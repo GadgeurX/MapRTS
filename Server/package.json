@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "RCorp",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "js-sha512": "^0.3.0",
+    "monk": "^4.0.0",
+    "request": "^2.81.0",
+    "socketio": "^1.0.0",
+    "xml2js": "^0.4.17"
+  }
 }

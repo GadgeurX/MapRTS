@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MapRTS</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+</head>
+
+<body>
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: block;position: absolute;top: 30%;margin-left: 38%;">
+        <div class="modal-dialog">
+            <div class="loginmodal-container">
+                <h1 id="formTitle">Login</h1><br>
+                <form>
+                    <input id="textUser" type="text" name="user" placeholder="Username">
+                    <input id="textPass" type="password" name="pass" placeholder="Password">
+                    <input id="textEmail" type="text" name="email" placeholder="Email" style="display:none">
+                    <input id="connectionBtn" type="button" name="login" class="login loginmodal-submit" value="Login">
+                    <input id="registerBtn" type="button" name="register" class="login loginmodal-submit" value="Register" style="display:none">
+                </form>
+
+                <div class="login-help">
+                    <a id="registerlink">Register</a> - <a href="#">Forgot Password</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
