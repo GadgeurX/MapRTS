@@ -21,7 +21,8 @@ ServerIo.on('connection', function (client) {
     client.on('get_territories_info', function (data) {
         request('http://maps.googleapis.com/maps/api/geocode/xml?latlng=' + data.gps.lat + ',' + data.gps.lon + '&sensor=true', function (error, response, body) {
             parseString(body, function (err, result) {
-                console.log(result.GeocodeResponse.result);
+                if (result == null)
+                    return client.emit('get_territories_info_response', {id: data.id, info: null});
                 result.GeocodeResponse.result.forEach(function(element) {
                     if (element.type.indexOf("locality") > -1)
                     {

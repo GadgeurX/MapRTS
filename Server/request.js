@@ -24,7 +24,8 @@ class Request {
                         'email': email,
                         'exp': 0,
                         'level' : 1,
-                        'picture': "https://www.buira.org/assets/images/shared/default-profile.png"
+                        'picture': "https://www.buira.org/assets/images/shared/default-profile.png",
+                        'money': 0
                     }
                 );
                 console.log("[INFO] : User " + username + " registed");

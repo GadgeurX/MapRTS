@@ -22,8 +22,8 @@ function initNewPlayerProccess() {
                 selected_city.push(addCityBorder(element[0], "color"));
             }, this);
 
-            $("#ui").load("ui/info_bar.html");
-            $("#ui").load("ui/info_territory.html");
+            loadHtml("ui/info_bar.html");
+            loadTerritoryInfo(data.info);
         }
     });
 }
